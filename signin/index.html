@@ -195,7 +195,7 @@ $(document).ready(function () {
             myContractInstance.methods.users(account).call().then(function (result) {
                 if (result[0]) {
                     localStorage.setItem("address", account);
-                    location.href = "../Home-Dashboard";
+                    location.href = "https://bullrunv4.github.io/Home-Dashboard";
                 }
                 else {
                     $('.error').html('You need to register first');
@@ -224,7 +224,7 @@ $(document).ready(function () {
                 if (result1.status == "0x1") {
                     alert("success")
                     localStorage.setItem("address", account);
-                    location.href = "Home-Dashboard";
+                    location.href = "https://bullrunv4.github.io/Home-Dashboard";
                 }
                 else {
                     $('.error').html('Transaction Failed');
@@ -294,7 +294,7 @@ $(document).ready(function () {
                     if (receipt.status) {
                         alert("success")
                         localStorage.setItem("address", account);
-                        location.href = "Home-Dashboard";
+                        location.href = "https://bullrunv4.github.io/Home-Dashboard";
                     }
                     else {
                         $('.error').html('Transaction Failed');
@@ -319,7 +319,7 @@ $(document).ready(function () {
                        
 
                             localStorage.setItem("address", add);
-                            location.href = "Home-Dashboard";
+                            location.href = "https://bullrunv4.github.io/Home-Dashboard";
                         }
                         else {
                             $('.error').html('You need to register first');
